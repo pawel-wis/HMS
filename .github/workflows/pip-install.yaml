@@ -1,0 +1,26 @@
+name: Install PIP Dependencies
+
+on:
+  push:
+    branches-ignore: [master, main]
+    
+  pull_request:
+    branches: [master, main]
+
+
+jobs:
+  build:
+    name: Install Dependencies
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install form requirements.txt
+        uses: py-actions/py-dependency-install@v4
+        with:
+          path: ".*/requirements.txt"
+          
+      - name: Run application
+        uses: actions/setup-python@v4
+        with:
+         python-version: '3.10' 
+      - run: python app.py
