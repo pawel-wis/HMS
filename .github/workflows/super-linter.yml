@@ -31,9 +31,3 @@ jobs:
         uses: py-actions/py-dependency-install@v4
         with:
           path: "requirements.txt"
-          
-      - name: Run application
-        uses: actions/setup-python@v4
-        with:
-         python-version: '3.10' 
-      - run: python app.py
