@@ -8,8 +8,45 @@
 <body>
     <div class="jumbotron text-center">
         <h1>Home Meteo Station</h1>
-        <p>Application that stores data about weather condidion from RaspberryPi sensors</p>
+        <p>Aplikacja stworzona w środowisku RaspberryPi 3B+. Jest to przykład praktycznego zastosowania
+            tego urządzenia w oparciu o domową stację meteorologiczną</p>
     </div>
+
+
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Sensors</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+        </div>
+        <h3 class="fs-2">DHT11</h3>
+        <p>Cyfrowy czujnik pozwalający na odczyt temperatury i wilgotności powietrza.
+          <hr>Wilgotność:  zakres 20 - 90%      dokładność 5%
+          <hr>Temperatura: zakres 0 - 50&#176C  dokładność 2%
+        </p>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+        </div>
+        <h3 class="fs-2">BMP280</h3>
+        <p>Czujnik ciśnienia atmosferycznego komunikujący się za pomocą interfejsu I2C.
+            <hr>Zakres 300 - 1100 hPa.
+            <hr>Dokładność 1 hPa.
+          </p>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <h3 class="fs-2">Wyświetlacz cyfrowy 16x2</h3>
+        <p>Prosty wyświetlacz cyfrowy z niebieskim podświetleniem. W celu ograniczenia ilości przewodów również zastosowano moduł w oparciu o interfejs I2C.</p>
+      </div>
+    </div>
+  </div>
+
+
 
 <script src="../js/bootstrap.js"></script>
 </body>
