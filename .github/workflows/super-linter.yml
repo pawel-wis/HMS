@@ -26,8 +26,3 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Install form requirements.txt
-        uses: py-actions/py-dependency-install@v4
-        with:
-          path: "requirements.txt"
