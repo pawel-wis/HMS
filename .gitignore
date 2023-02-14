@@ -1,2 +1,4 @@
 venv/
 .idea/
+hot_tests/
+local_addrs
