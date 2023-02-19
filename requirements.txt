@@ -1,4 +1,3 @@
 flask~=2.2.2
 adafruit_dht
 smbus~=1.1.post2
-bmp280
